@@ -1,21 +1,24 @@
 Приложение А
-\begin{table}[p]
-\caption{
 Результаты вычислительного эксперимента для~алгоритма комплексного анализа 
 близости предложений.
 Для сравнения даны оценки близости представленных пар предложений людьми, 
 результаты работы алгоритма и условная погрешность его работы, как модуль разности между этими оценками.
 Достоверность оценок близости, данных людьми, равна 0,95. Достоверность для~оценок,
 данных алгоритмом, а также для условной погрешности его работы равна 0,999995 и 0,95 соответственно. 
-}
-\label{table_result}
 \begin{center}
 {\Large
-\begin{tabular}{|p{9cm}|c|c|c|}
+\begin{longtable}{|p{9cm}|c|c|c|}
 \hline
 Предложения & Оценки & Оценки & Погрешность  \\
  & людей & алгоритма &  \\
+\hline\endfirsthead
 \hline
+Предложения & Оценки & Оценки & Погрешность  \\
+ & людей & алгоритма &  \\
+\hline\endhead
+\hline \multicolumn{4}{|r|}{{Продолжение на следующей странице}} \\ \hline
+\endfoot
+\endlastfoot
 Cord is strong, thick string. & 0.01 & 0.078090 & 0.068090 \\
 A smile is the expression that you have on your face when youare pleased or amused, or when you are being friendly. & & & \\
 \hline
@@ -211,10 +214,9 @@ Noon is 12 o'clock in the middle of the day. & & & \\
 A gem is a jewel or stone that is used in jewellery. & 0.6525 & 0.356985 & 0.295514 \\
 A jewel is a precious stone used to decorate valuable thingsthat you wear, such as rings or necklaces. & & & \\
 \hline
-\end{tabular}
+\end{longtable}
 }
 \end{center}
-\end{table}
 
 Приложение B
 Результаты запуска алгоритма поиска похожих предложений в статье Wikipedia.
