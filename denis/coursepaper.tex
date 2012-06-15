@@ -11,6 +11,7 @@
 \usepackage{sectsty}
 \usepackage{fancyhdr}
 \usepackage{longtable}
+\usepackage{url}
 
 \newcommand{\EN}[1]{{#1}}
 \newcommand{\CODE}[1]{{\ttfamily #1}}
@@ -60,14 +61,14 @@
 \newpage
 \input{main}
 \newpage
-%%\addcontentsline{toc}{section}{\hspace{7mm}Список литературы}
-%%\begin{thebibliography}{0}
-%%\input{bibliography}
-%%\end{thebibliography}
+\addcontentsline{toc}{section}{\hspace{7mm}Список литературы}
+\begin{thebibliography}{0}
+\input{bibliography}
+\end{thebibliography}
 \newpage
-%%\begin{center}
-%%Приложение
-%%\end{center}
-%%\addcontentsline{toc}{section}{\hspace{7mm}Приложение}
+\begin{center}
+Приложение
+\end{center}
+\addcontentsline{toc}{section}{\hspace{7mm}Приложение}
 \input{appendix}
 \end{document}
