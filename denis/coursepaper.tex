@@ -12,6 +12,8 @@
 \usepackage{fancyhdr}
 \usepackage{longtable}
 \usepackage{url}
+\usepackage{appendix}
+ 
 
 \newcommand{\EN}[1]{{#1}}
 \newcommand{\CODE}[1]{{\ttfamily #1}}
@@ -41,6 +43,16 @@
 \subsubsectionfont{\Large}
 \setlength{\belowcaptionskip}{6pt}
 \makeatletter \renewcommand{\@biblabel}[1]{#1.\hfill}
+
+\makeatletter 
+\def\redeflsection{\def\l@section{\@dottedtocline{1}{1.5em}{7.8em}}} 
+\renewcommand\appendix{\par 
+\setcounter{section}{0}% 
+\setcounter{subsection}{0}% 
+\def\@chapapp{\appendixname}% 
+\addtocontents{toc}{\protect\redeflsection} 
+\def\thesection{\appendixname\hspace{0.2cm}\@Asbuk\c@section}} 
+\makeatother 
 
 \textwidth = 17cm
 \oddsidemargin= 0 pt
