@@ -35,6 +35,8 @@
 \begin{frame}
 \frametitle{Значимость Wikipedia как базы знаний}
 
+\url{http://wikipedia.org}
+
 \begin{itemize}
 \item{
 Строгая формализованность способа хранения статей;
@@ -272,7 +274,7 @@ $paraphrase(S_1, S_2) = sim(S_1,S_2)/diss(S_1, S_2)$,
 Семантическая близость предложений;
 }
 \item{
-синтаксическая близость предложений;
+Cинтаксическая близость предложений;
 }
 \end{itemize}
 
@@ -323,7 +325,7 @@ $$sim_{syn}(S_1, S_2) = 2 \cdot |S_{syn_1} \cup S_{syn_2}| / (|S_{syn_1}| + |S_{
 \vspace{0.1cm}
 Как результат оценивания суммарной меры близости предложений, 
 дается следующая формула:
-$$sim(S_1, S_2) = \alpha_1 \cdot sim_{sem}(S_1, S_2) + \alpha_2 \cdot sim_{sym}(S_1, S_2),$$
+$$sim(S_1, S_2) = \alpha_1 \cdot sim_{sem}(S_1, S_2) + \alpha_2 \cdot sim_{syn}(S_1, S_2),$$
  при $\alpha_1+\alpha_2=1$,
 
 \end{frame}
