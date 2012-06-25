@@ -160,26 +160,13 @@
 \frametitle{CoreNLP и представление деревьев зависимостей}
 Предложение: {\it ``If I had a gun I'd shoot a hole into the sun''}
 
-Его список зависимостей имеет вид:
-%%я постараюсь успеть нарисовать дерево чуть позже
+Его дерево зависимостей имеет вид:
 
+\begin{figure}
 \begin{center}
-
-mark(had-3, If-1)\\
-nsubj(had-3, I-2)\\
-root(ROOT-0, had-3)\\
-det(gun-5, a-4)\\
-dobj(had-3, gun-5)\\
-nsubj(shoot-8, I-6)\\
-aux(shoot-8, 'd-7)\\
-rcmod(gun-5, shoot-8)\\
-det(hole-10, a-9)\\
-dobj(shoot-8, hole-10)\\
-prep(shoot-8, into-11)\\
-det(sun-13, the-12)\\
-pobj(into-11, sun-13)\\
-
+\includegraphics[scale=0.29]{../eps/dependency_tree.eps}
 \end{center}
+\end{figure}
 
 \end{frame}
 
