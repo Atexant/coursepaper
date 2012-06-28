@@ -12,6 +12,7 @@
 \usepackage{fancyhdr}
 \usepackage{longtable}
 \usepackage{amsmath}
+\usepackage{url}
 
 \newcommand{\EN}[1]{{#1}}
 \newcommand{\CODE}[1]{{\ttfamily #1}}
@@ -62,15 +63,17 @@
 \input{intro}
 \input{main}
 \newpage
-%%\addcontentsline{toc}{section}{\hspace{7mm}Список литературы}
-%%\begin{thebibliography}{0}
-%%\input{bibliography}
-%%\end{thebibliography}
+\input{conclusion}
 \newpage
-%%\begin{center}
-%%Приложение
-%%\end{center}
-%%\addcontentsline{toc}{section}{\hspace{7mm}Приложение}
+\addcontentsline{toc}{section}{\hspace{7mm}Список литературы}
+\begin{thebibliography}{0}
+\input{bibliography}
+\end{thebibliography}
+\newpage
+\begin{center}
+Приложение
+\end{center}
+\addcontentsline{toc}{section}{\hspace{7mm}Приложение}
 
 \input{appendix}
 
